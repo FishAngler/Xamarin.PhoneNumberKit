@@ -95,7 +95,7 @@ namespace PhoneNumberKit
 
         // @property (nonatomic, strong) id _Nullable delegate;
         [NullAllowed, Export("delegate", ArgumentSemantic.Strong)]
-        UITextFieldDelegate WeakDelegate { get; set; }
+        NSObject WeakDelegate { get; set; }
 
         // -(instancetype _Nonnull)initWithFrame:(id)frame __attribute__((objc_designated_initializer));
         [Export("initWithFrame:")]
